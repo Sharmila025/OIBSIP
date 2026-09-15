@@ -1,0 +1,35 @@
+# Unemployment Analysis in India — Impact of COVID-19
+
+Exploratory data analysis of unemployment trends across Indian states (Jan 2019 – Oct 2020), 
+with a focus on how the COVID-19 lockdown affected regional labour markets.
+
+## 📊 What this covers
+- Data cleaning & type conversion (dates, numeric fields, whitespace artifacts)
+- Region-wise and month-wise unemployment trends
+- Time-series comparison across 5 major states (Maharashtra, UP, Tamil Nadu, Delhi, West Bengal)
+- Top 10 states by average unemployment rate
+- Correlation heatmap: unemployment rate, employment rate, labour participation rate
+- Pre-COVID vs. post-COVID comparison (cutoff: 25 March 2020, India's lockdown date)
+
+## 🔑 Key finding
+All-India average unemployment rate nearly **doubled** post-lockdown (9.5% → 17.8%), 
+alongside a **drop in labour participation rate** (43.9% → 39.3%) — suggesting many people 
+exited the workforce entirely rather than simply staying unemployed while job-hunting.
+
+## 🛠 Tech stack
+Python · pandas · matplotlib · seaborn · Jupyter Notebook
+
+## 📁 Dataset
+["Unemployment in India"](https://www.kaggle.com/datasets/gokulrajkmv/unemployment-in-india) 
+by Gokul Raj Kumar V (sourced from CMIE — Centre for Monitoring Indian Economy).
+
+## 🚀 Running it
+```bash
+pip install pandas numpy matplotlib seaborn jupyter
+jupyter notebook Unemployment_Analysis_India.ipynb
+```
+
+## 📂 Files
+- `Unemployment_Analysis_India.ipynb` — main analysis notebook
+- `Unemployment_in_India.csv` — primary dataset (2019–2020)
+- `Unemployment_Rate_upto_11_2020.csv` — zone-reference dataset (2020)
